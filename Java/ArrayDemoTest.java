@@ -1,0 +1,9 @@
+public class ArrayDemoTest{
+    public static void main(String[] args){
+        ArrayDemo arr= new ArrayDemo();
+        arr.manualArray();
+        arr.loopArray();
+        arr.enhancedArray();
+        arr.inputArray();
+    }
+}

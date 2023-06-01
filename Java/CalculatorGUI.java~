@@ -1,0 +1,68 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+public class CalculatorGUI extends JFrame implements ActionListener{
+    JFrame frame;
+    JButton btnAdd;
+    JPanel panel;
+    JLabel label1, label2, label3;
+    JTextField txtNum1, txtNum2, txtResult;
+    private Integer num1, num2, sum;
+    public CalculatorGUI(){
+        initFrame();
+        sum=0;
+        num1=0;
+        num2=0;
+    }
+    public void initFrame(){
+        frame=new JFrame();
+        panel=new JPanel();
+        panel.setLayout(new FlowLayout());
+        frame.add(panel);
+        
+        label1=new JLabel("First Number");
+        txtNum1=new JTextField(20);
+        panel.add(label1);
+        panel.add(txtNum1);
+        
+        label2=new JLabel("Second Number");
+        txtNum2=new JTextField(20);
+        panel.add(label2);
+        panel.add(txtNum2);
+        
+        label3=new JLabel("Computed Result");
+        txtResult=new JTextField(20);
+        panel.add(label3);
+        panel.add(txtResult);
+        
+        btnAdd=new JButton("Add");
+        panel.add(btnAdd);
+        
+        btnAdd.addActionListener(this);
+        
+        frame.setTitle("GUI Calculator");
+        frame.setSize(300,300);
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
+    public void actionPerformed(ActionEvent e){
+        if(e.getSource()==btnAdd){
+            try{
+            num1=Integer.parseInt(txtNum1.getText());
+            num2=Integer.parseInt(txtNum2.getText());
+            sum=num1+num2;
+            txtResult.setText(""+sum);   
+        }
+            catch(NumberFormatException str){
+                JOptionPane.showMessageDialog(null,"Please Input Numbers Only");
+                txtNum1.setText("");
+                txtNum2.setText("");
+                txtResult.setText("");
+            }           
+        }
+    }
+    public static void main(String[] args){
+        CalculatorGUI cal=new CalculatorGUI();
+    }
+}

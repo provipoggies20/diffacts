@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Animal()
+comment1.params=
+comment1.target=void\ eat()
+comment2.params=
+comment2.target=void\ sleep()
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=
+comment4.target=void\ printName()
+numComments=5

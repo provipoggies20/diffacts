@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ConfirmDialogBox()
+comment1.params=
+comment1.target=void\ setSide()
+comment2.params=
+comment2.target=double\ getSide()
+comment3.params=
+comment3.target=double\ computeArea()
+comment4.params=
+comment4.target=void\ isContinue()
+comment5.params=
+comment5.target=void\ printArea()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7

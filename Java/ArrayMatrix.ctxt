@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ArrayMatrix()
+comment1.params=
+comment1.target=void\ inputMatrix()
+comment2.params=
+comment2.target=void\ printMatrix()
+comment3.params=
+comment3.target=void\ printRowSum()
+comment4.params=
+comment4.target=void\ printColSum()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

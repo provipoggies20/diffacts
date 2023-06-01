@@ -1,0 +1,56 @@
+import java.util.*;
+import static java.lang.System.out;
+public class ArrayMatrix{
+    public Integer[][] matrix;
+    public Integer row;
+    public Integer col;
+    public ArrayMatrix(){
+        matrix=new Integer[3][4];
+    }
+    public void inputMatrix(){
+        Scanner read=new Scanner(System.in);
+        out.println("Enter Elements Matrix:\t");
+        for(Integer r=0;r<3;r++){
+            for(Integer c=0;c<4;c++){
+                out.print("["+r+"]["+c+"]:");
+                matrix[r][c]=read.nextInt();
+            }
+        }
+    }
+    public void printMatrix(){
+        for(Integer r=0;r<3;r++){
+            for(Integer c=0;c<4;c++){
+                out.print("\t"+matrix[r][c]);
+            }
+            out.println();
+        }
+        printRowSum();
+    }
+    public void printRowSum(){
+        Integer sum=0;
+        for(Integer[] row:matrix){
+            for(Integer data:row){
+                sum+=data;
+            }
+            out.print("=\t"+sum);
+            sum=0;
+        }
+        out.print("\n\t----------------------------------------\n");
+        printColSum();
+    }
+    public void printColSum(){
+        Integer sum=0;
+        for(Integer r=0;r<4;r++){
+            for(Integer c=0;c<3;c++){
+                sum=sum+matrix[c][r];
+            }
+            out.print(sum+"\t");
+            sum=0;
+        }
+    }
+    public static void main(String[] args){
+        ArrayMatrix mx=new ArrayMatrix();
+        mx.inputMatrix();
+        mx.printMatrix();
+    }
+}

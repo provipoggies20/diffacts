@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AreaTriangle()
+comment1.params=b
+comment1.target=void\ setBase(double)
+comment2.params=
+comment2.target=double\ getBase()
+comment3.params=h
+comment3.target=void\ setHeight(double)
+comment4.params=
+comment4.target=double\ getHeight()
+comment5.params=
+comment5.target=void\ computeArea()
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+numComments=7
