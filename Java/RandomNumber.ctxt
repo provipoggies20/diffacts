@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=RandomNumber()
+comment1.params=random
+comment1.target=void\ setRandom(int)
+comment2.params=
+comment2.target=int\ getRandom()
+comment3.params=
+comment3.target=void\ retry()
+comment4.params=
+comment4.target=void\ rollTheDice()
+numComments=5

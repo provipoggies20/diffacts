@@ -1,0 +1,108 @@
+import javax.swing.*;
+public class SimpleCalculator
+{
+    private double number1;
+    private double number2;
+    private int option;
+    public SimpleCalculator()
+    {
+        number1 = 0.0;
+        number2 = 0.0;
+        option = 0;
+    }
+    public void showTitle()
+    { 
+        JOptionPane.showMessageDialog(null,"This is a Simple Calculator Program","Simple Calculator",JOptionPane.INFORMATION_MESSAGE);
+    }
+    public void setNum1()
+    {
+        try
+           {
+            String XxX = JOptionPane.showInputDialog("Enter the first number:");
+            number1 = Double.parseDouble(XxX);
+           }
+       catch(NumberFormatException eli)
+           {
+            JOptionPane.showMessageDialog(null," Oooooooppss! Please input numbers only.","Error", JOptionPane.ERROR_MESSAGE);
+           }
+    }
+    public double getNum1()
+     {
+        return number1;
+     }
+    public void setNum2()
+      {
+          try
+             {
+              String YyY = JOptionPane.showInputDialog("Enter the second number:");
+              number2 = Double.parseDouble(YyY);
+             }
+        catch(NumberFormatException eli)
+            {
+                JOptionPane.showMessageDialog(null," Oooooooppss! Please input numbers only.","Error", JOptionPane.ERROR_MESSAGE);
+            }
+      }
+    public double getNum2()
+      {
+        return number2;
+      }
+    public void computeSubtract()
+      {
+        double difference;
+        difference = ((getNum1())-(getNum2()));
+        JOptionPane.showMessageDialog(null,"The result is "+difference);
+      }
+    public void computeAdd()
+      {
+        double sum;
+        sum = (getNum1()+getNum2()); 
+        JOptionPane.showMessageDialog(null,"The result is "+sum);
+      }
+    public void computeMultiply()
+      {
+        double product;
+        product = (getNum1()*getNum2()); 
+        JOptionPane.showMessageDialog(null,"The result is "+product);
+      }
+    public void computeDivide()
+      {
+        double div;
+        div = (getNum1()/getNum2()); 
+        JOptionPane.showMessageDialog(null,"The result is "+div);
+      }
+    public void setOption()
+      {
+        try {
+        String ZzZ = JOptionPane.showInputDialog("What would you like to do? \n [1] Add\n[2] Subtract \n[3] Multiple \n [4] Divide");
+        option = Integer.parseInt(ZzZ);
+        if (option == 1)
+            {
+            computeAdd();
+            }
+        else if (option == 2)
+            {
+            computeSubtract();
+            }
+             else if (option == 3)
+            {
+            computeMultiply();
+            }
+             else if (option == 4)
+            {
+            computeDivide();
+            }
+            }
+            catch(NumberFormatException eli)
+            {
+            JOptionPane.showMessageDialog(null," Oooooooppss! Please input numbers only.","Error", JOptionPane.ERROR_MESSAGE);
+            }
+      } 
+    public static void main(String args[])
+    {
+       SimpleCalculator compute = new SimpleCalculator();
+       compute.showTitle();
+       compute.setNum1();  
+       compute.setNum2(); 
+       compute.setOption();
+    }
+}

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StringDemo()
+comment1.params=n
+comment1.target=void\ setName(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=void\ countChar()
+comment4.params=
+comment4.target=void\ countLetter()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6

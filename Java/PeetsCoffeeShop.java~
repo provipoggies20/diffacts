@@ -1,0 +1,67 @@
+import javax.swing.JOptionPane;
+public class PeetsCoffeeShop
+{
+    private double price;
+    private double pound;
+    final double RatePerRound;
+    final double FixesHandleFee;
+    private double shipping;
+    private double Total;
+   public PeetsCoffeeShop()
+   {
+       price=0.0;
+       pound=0.0;
+       RatePerRound=1.25;
+       FixesHandleFee=1.95;
+       shipping=0.0;
+       Total=0.0;
+    }
+     public void setTitle()
+    {
+        JOptionPane.showMessageDialog(null,"******************************************************\n***************PEET'S COFFEE SHOP***************\n******************************************************");
+    }
+     public void setPrice()
+    {
+        String str = JOptionPane.showInputDialog("Given price per rounds:");
+        price = Double.parseDouble(str);
+    }
+    public void setPounds()
+    {
+        String str = JOptionPane.showInputDialog("Given number of pounds:");
+        pound = Double.parseDouble(str); 
+    }
+     public double getPrice()
+    {
+        return price;
+    }
+    public double getPounds()
+    {
+        return pound;
+    }
+    public void computeCoffeeTotal()
+    {
+        Total=getPrice()*getPounds();
+        JOptionPane.showMessageDialog(null,"Coffee total: "+Total);
+    }
+    public void computeShipping()
+    {
+        shipping=(getPounds())*RatePerRound+FixesHandleFee;
+        JOptionPane.showMessageDialog(null,"Coffee total: "+shipping);
+    }
+     public void computeTotalCost()
+    {
+        double cost=0.0;
+        cost=Total+shipping;
+        JOptionPane.showMessageDialog(null,"Total cost: "+cost);
+    }
+    public static void main(String[] args)
+    {
+        PeetsCoffeeShop view = new PeetsCoffeeShop();
+        view.setTitle();
+        view.setPrice();
+        view.setPounds();
+        view.computeCoffeeTotal();
+        view.computeShipping();
+        view.computeTotalCost();
+    }
+}

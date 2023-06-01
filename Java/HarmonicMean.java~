@@ -1,0 +1,67 @@
+import javax.swing.*;
+public class HarmonicMean
+{
+    private double x;
+    private double y;
+    private double arithMean;
+    private double harmMean;
+    private String title;
+    
+    public HarmonicMean()
+    {
+        x=0.0;
+        y=0.0;
+        arithMean=0.0;
+        harmMean=0.0;
+        title="";
+    }
+    public void displayTitle()
+    {
+        JOptionPane.showMessageDialog(null, "************************************************\n************HARMONIC MEAN************\n************************************************");
+    }
+     public void setX()
+     {
+       String XxX = JOptionPane.showInputDialog("Give value of X:  ");
+       x= Double.parseDouble(XxX);
+    }
+    public void setY()
+    {
+        String YyY= JOptionPane.showInputDialog("Give value of Y:  ");
+        y= Double.parseDouble(YyY);
+    }
+     public double getX()
+    {
+        return x;  
+    }
+    public double getY()
+    {
+        return y;  
+    }
+    public double computeArithmeticM()
+    {
+        arithMean= getX()+getY()/2;
+        return arithMean;
+    }
+    public double computeHarmonicM()
+    {
+        harmMean= 2 /(1/getX() + 1/getY());
+        return harmMean;
+    }
+    public void displayArith()
+    {
+        JOptionPane.showMessageDialog(null,"Arithmetic mean: "+computeArithmeticM()); 
+    }
+     public void displayHarom()
+    {
+        JOptionPane.showMessageDialog(null,"Harmonic mean: "+computeHarmonicM()); 
+    }
+     public static void main(String[]args)
+    {
+        HarmonicMean display = new HarmonicMean();
+        display.displayTitle();
+        display.setX();
+        display.setY();
+        display.displayArith();
+        display.displayHarom();
+   }  
+}

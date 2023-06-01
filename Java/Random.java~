@@ -1,0 +1,8 @@
+import java.lang.*;
+public class Random
+{
+    public static void main(String[] args)
+    {
+        System.out.print((int)6*random());
+    }
+}

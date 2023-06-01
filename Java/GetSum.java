@@ -1,0 +1,47 @@
+import javax.swing.JOptionPane;
+public class GetSum
+{
+  private int num1;
+  private int num2;
+  private int sum;
+  public GetSum()
+  {
+     num1 = 0;
+     num2 = 0;
+  }
+  public void setFirstNumber()
+  {
+      String str = JOptionPane.showInputDialog("Enter First Integer Number: ");
+      num1 = Integer.parseInt(str);
+  }
+  public void setSecondNumber()
+  {
+      String str = JOptionPane.showInputDialog("Enter Second Integer Number: ");
+      num2 = Integer.parseInt(str);
+  }
+  public int getFirstNumber()
+  {
+      return num1;
+  }
+   public int getSecondNumber()
+  {
+      return num2;
+  }
+  public int computeSum()
+  {
+      sum=getFirstNumber()+getSecondNumber();
+      return sum;
+  }
+  public void printSum()
+  {
+       JOptionPane.showMessageDialog(null, "The Sum is: " + computeSum());
+  }
+  public static void main (String [] args)
+  {
+      GetSum display=new GetSum();
+      display.setFirstNumber();
+      display.setSecondNumber();
+      display.printSum();
+  }
+}
+

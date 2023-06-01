@@ -1,0 +1,39 @@
+import java.lang.*;
+import static java.lang.System.out;
+import java.util.*;
+public class RandomNumber{
+    private Integer randomNumber;
+    private Integer retry;
+    public RandomNumber(){
+        randomNumber=0;
+        retry=0;
+    }
+    public void setRandom(int random){
+        randomNumber=random;
+    }
+    public int getRandom(){
+        return randomNumber;
+    }
+    public void retry(){
+        try{
+            Scanner read = new Scanner(System.in);
+            out.print("\nDo You Want To Roll The Dice Again?\nPress 1 To Continue or Press 0 To Quit.");
+            retry = read.nextInt();
+            if(retry==1){
+                rollTheDice();
+                retry();
+            }
+            else if(retry==0){
+                out.print("\nTerminated");
+            }
+        }
+        catch(NumberFormatException chi){
+        }   
+    }
+    public void rollTheDice(){
+        out.print("Let's Roll The Dice!");
+        int r=(6*Math.random())+1;
+        setRandom(r);
+        out.print("\nRoll Number: "+getRandom());
+    }
+}

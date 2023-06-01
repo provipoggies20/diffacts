@@ -1,0 +1,26 @@
+import static java.lang.System.out;
+public class MultTable
+{
+    public int c[];
+    public int j[];
+    public int ly;
+    public MultTable()
+    {
+        c[]={1,2,3,4,5,6,7,8,9};
+        j[]={1,2,3,4,5,6,7,8,9};
+        ly=0;
+    }
+    public void h()
+    {
+        out.print("*\t");
+        for(int x=0;x<10;x++)
+        {
+            out.print(c[x]+"\t");
+        }
+    }    
+    public static void main(String[] args)
+    {
+        MultTable table=new MultTable();
+        table.h();
+    }
+}

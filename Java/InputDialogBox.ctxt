@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=InputDialogBox()
+comment1.params=
+comment1.target=void\ setName()
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=void\ printName()
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

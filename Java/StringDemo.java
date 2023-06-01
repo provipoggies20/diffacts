@@ -1,0 +1,52 @@
+import java.util.Scanner;
+import static java.lang.System.out;
+public class StringDemo
+{
+    private String name;
+    public StringDemo()
+    {
+        name=" ";
+    }
+    private void setName(String n)
+    {
+        name=n;
+    }
+    private String getName()
+    {
+        return name;
+    }
+    private void countChar()
+    {
+        Integer len=getName().length();
+        out.print("The Length Of The String Is: "+len);
+    }
+    public void countLetter()
+    {
+        Integer x=0, counter=0, di=0;
+        while(x<getName().length())
+        {
+            Character letter=getName().charAt(x);
+            if(Character.isLetter(letter))
+            {
+                counter++;
+            }
+            if(Character.isDigit(letter))
+            {
+                di++;
+            }
+             x++;
+        }
+        out.print("\nThe Total Number Of Letter: "+counter);
+        out.print("\nThe Total Number Of Digit: "+di);
+    }
+    public static void main(String[] args)
+    {
+        Scanner scan=new Scanner(System.in);
+        StringDemo lc= new StringDemo();
+        out.print("Enter Any String: ");
+        String any=scan.nextLine();
+        lc.setName(any);
+        lc.countChar();
+        lc.countLetter();
+    }
+}

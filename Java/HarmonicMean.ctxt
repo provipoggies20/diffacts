@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=HarmonicMean()
+comment1.params=
+comment1.target=void\ displayTitle()
+comment10.params=args
+comment10.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ setX()
+comment3.params=
+comment3.target=void\ setY()
+comment4.params=
+comment4.target=double\ getX()
+comment5.params=
+comment5.target=double\ getY()
+comment6.params=
+comment6.target=double\ computeArithmeticM()
+comment7.params=
+comment7.target=double\ computeHarmonicM()
+comment8.params=
+comment8.target=void\ displayArith()
+comment9.params=
+comment9.target=void\ displayHarom()
+numComments=11

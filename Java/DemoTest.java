@@ -1,0 +1,9 @@
+import java.lang.*;
+import static java.lang.System.out;
+public class DemoTest{
+    public static void main(String[] args){
+        NumberDemo num=new NumberDemo();
+        num.printHead();
+        num.computeSinCosTan();
+    }
+}
