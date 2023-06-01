@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Velocity()
+comment1.params=
+comment1.target=void\ setSpeed()
+comment2.params=
+comment2.target=void\ setTime()
+comment3.params=
+comment3.target=double\ getSpeed()
+comment4.params=
+comment4.target=double\ getTime()
+comment5.params=
+comment5.target=void\ computeVelocity()
+numComments=6

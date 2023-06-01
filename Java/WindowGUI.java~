@@ -1,0 +1,33 @@
+import javax.swing.*;//UI Elements
+import java.awt.*;//Layout Screen
+import java.awt.event.*;//Event
+public class WindowGUI extends JFrame implements ActionListener{
+    JLabel label;
+    JButton btnMessage;
+    public WindowGUI(){
+        initFrame();
+    }
+    public void initFrame(){
+        JFrame frame=new JFrame();
+        JPanel panel=new JPanel();
+        panel.setLayout(new FlowLayout());
+        label=new JLabel("Click The Button To Show The Hidden Message");
+        btnMessage=new JButton("Click Me");
+        panel.add(label);
+        panel.add(btnMessage);
+        btnMessage.addActionListener(this);
+        frame.add(panel);
+        frame.setResizable(false);
+        frame.setTitle("My First Java GUI Program");
+        frame.setSize(300,300);
+        frame.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
+    public void actionPerform(ActionEvent e){
+        JOptionPane.showMessageDialog(null,"Hello World");
+    }
+    public static void main(String[] args){
+        WindowGUI win=new WindowGUI();
+    }
+}
