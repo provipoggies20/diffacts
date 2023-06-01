@@ -1,0 +1,9 @@
+.label-yellow{background-color:#dbdb09}.label-yellow[href]:focus,.label-yellow[href]:hover{background-color:#dbdb09}
+.label-lgreen{background-color:#7dd431}.label-lgreen[href]:focus,.label-lgreen[href]:hover{background-color:#7dd431}
+.label-dgreen{background-color:#368009}.label-dgreen[href]:focus,.label-dgreen[href]:hover{background-color:#368009}
+.label-lred{background-color:#eb7742}.label-lred[href]:focus,.label-lred[href]:hover{background-color:#eb7742}
+.label-lblue{background-color:#abf5d1}.label-lblue[href]:focus,.label-lblue[href]:hover{background-color:#abf5d1}
+.label-brown{background-color:#db7521}.label-brown[href]:focus,.label-brown[href]:hover{background-color:#db7521}
+.label-red{background-color:#eb2315}.label-red[href]:focus,.label-red[href]:hover{background-color:#eb2315}
+
+.panel-blueform{border-color:#0d96ff}.panel-blueform>.panel-heading{color:#fff;background-color:#0d96ff;border-color:#0d96ff}.panel-blueform>.panel-heading+.panel-collapse>.panel-body{border-top-color:#0d96ff}.panel-blueform>.panel-heading .badge{color:#0d96ff;background-color:#fff}.panel-blueform>.panel-footer+.panel-collapse>.
